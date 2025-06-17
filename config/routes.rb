@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  # the / root link
+  root 'pages#home'
+
+  get 'about', to: 'pages#about'
+
+
   get 'welcome/hello'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
